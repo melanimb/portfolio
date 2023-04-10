@@ -11,8 +11,12 @@ h1 {
 
 h2 {
   font-size: 1.7rem;
-  font-weight: 700;
   color: #000000;
+}
+
+h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1.2rem;
 }
 
 .text-container {
@@ -27,10 +31,16 @@ p {
   font-size: 1.2rem;
   line-height: 1.8rem;
   font-weight: 400;
+  margin-bottom: 1rem;
 }
 
 a {
   text-decoration: none;
+  color: #000000;
+}
+
+a:hover {
+  color: #666666;
 }
 
 body {
@@ -116,6 +126,11 @@ body {
   height: 4.375rem;
 }
 
+.proyect-card {
+  border-radius: 10px;
+  max-width: 30rem;
+}
+
 section {
   margin: 0.5rem;
   box-shadow: 0px 0px 10px 2px rgba(68, 51, 8, 0.136);
@@ -164,6 +179,11 @@ h2 {
 
 .b-12 {
   border: 12px solid #fff;
+}
+
+.proyect-title-container {
+  width: fit-content;
+  margin: 0 auto;
 }
 
 @media only screen and (max-width: 768px){
