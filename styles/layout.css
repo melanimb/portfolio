@@ -204,6 +204,10 @@ h2 {
     line-height: 2.5rem;
   }
 
+  h3 {
+    font-size: 1.4rem;
+  }
+
   section {
     width: 90%;
   }
@@ -214,5 +218,9 @@ h2 {
 
   .about-me {
     padding: 0 0 1rem 0;
+  }
+
+  .proyect-card {
+    max-width: 100%;
   }
 }
