@@ -1,116 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="./styles/normalize.css" />
-    <link rel="stylesheet" href="./styles/layout.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Days+One&display=swap" rel="stylesheet">
-  </head>
-  <body class="container">
-    <main class="flex-container">
-      <section>
-        <article class="text-center">
-          <img
-            src="./images/profile.jpeg"
-            alt="Melani"
-            class="item profile b-8"
-          />
-          <h1>Melania Mares</h1>
-          <h2>Desarrolladora Frontend</h2>
-        </article>
 
-        <article class="text-center">
-          <h2 class="about-me">Sobre mí</h2>
-          <div class="text-container">
-            <p>Hola! Mi nombre es Melani! Me apasiona el desarrollo frontend, aprender nuevas tecnologías y explorar formas originales de resolver problemas. Actualmente estoy trabajando en un proyecto. Estoy interesada en seguir aprendiendo y trabajar en nuevos y retadores proyectos que me permitan crecer profesionalmente.</p>
-          </div>
-          <div class="flex-container-aboutme">
-            <a href="https://github.com/melanimb" class="animation" target="blank">
-              <img
-                src="./images/github.png"
-                alt="my-github"
-                class="item github b-12 animation"
-              />
-            </a>
-            <a href="https://www.linkedin.com/in/melania-mares-321034262/" target="blank">
-              <img
-                src="./images/linkedin.png"
-                alt="my-linkedin"
-                class="item linkedin"
-              />
-            </a>
-          </div>
-        </article>
-      </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="./styles/normalize.css" />
+  <link rel="stylesheet" href="./src/main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Days+One&display=swap" rel="stylesheet">
+</head>
 
-      <section>
-        <article class="text-center">
-          <h2>Tecnologías</h2>
-          <div class="flex-container-tech">
-            <a href="https://developer.mozilla.org/es/docs/Web/HTML" target="blank">
-              <img src="./images/html.png" alt="" class="item html b-8"/>
-            </a>
-            <a href="https://developer.mozilla.org/es/docs/Web/CSS" target="blank">
-                <img src="./images/css.png" alt="" class="item css b-8"/>
-            </a>
-            <a href="https://sass-lang.com/" target="blank">
-                <img src="./images/sass.png" alt="" class="item b-12"/>
-            </a>
-            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="blank">
-              <img src="./images/javascript.png" alt="" class="item js"/>
-            </a>
-            <a href="https://es.reactjs.org/" target="blank">
-              <img src="./images/react.png" alt="" class="item react"/>
-            </a>
-            <a href="https://nextjs.org/" target="blank">
-              <img src="./images/next.png" alt="" class="item next b-12"/>
-            </a>
-            <a href="https://git-scm.com/" target="blank">
-              <img src="./images/git.png" alt="" class="item git b-12"/>
-            </a>
-            <a href="https://tailwindcss.com/" target="blank">
-              <div class="item circle">
-                <img src="./images/tailwind.webp" alt="" class="tailwind" />
-              </div>
-            </a>
-            <a href="https://getbootstrap.com/" target="blank">
-              <div class="item circle">
-                <img src="./images/bootstrap.png" alt="" class="bootstrap" />
-              </div>
-            </a>
-          </div>
-        </article>
-      </section>
+<body class="container">
+  <main class="flex-container">
+    <section>
+      <article>
+        <img src="./public/profile.jpeg" alt="Melani" class="item profile b-8" />
+        <h1>Melania Mares</h1>
+        <h2>Desarrolladora Frontend</h2>
+      </article>
 
-      <section>
-        <article class="text-center">
-          <h2>Proyectos</h2>
-          <div class="proyect-title-container">
-            <a href="https://free-pics.vercel.app/" target="blank">
-              <h3>FreePics</h3>
-            </a>
-          </div>
-          <p>Buscador de imágenes</p>
-          <a href="https://free-pics.vercel.app/" target="blank">
-            <img class="proyect-card" src="./images/free-pics-preview.gif" alt="free-pics gif">
+      <article>
+        <h2 class="about-me">Sobre mí</h2>
+        <div class="text-container">
+          <p>Hola! Mi nombre es Melani! Me apasiona el desarrollo frontend, aprender nuevas tecnologías y explorar
+            formas originales de resolver problemas. Actualmente estoy trabajando en un proyecto. Estoy interesada en
+            seguir aprendiendo y trabajar en nuevos y retadores proyectos que me permitan crecer profesionalmente.</p>
+        </div>
+        <div class="flex-container-aboutme">
+          <a href="https://github.com/melanimb" class="animation" target="blank">
+            <img src="./public/github.png" alt="my-github" class="item github b-12 animation" />
           </a>
-        </article>
-      </section>
-      
-      <section>
-        <article class="text-center">
-          <h2>Contáctame!</h2>
-          <a href="mailto:melanibrunet20@gmail.com">melanibrunet20@gmail.com</a>
-        </article>
-      </section>
-    </main>
-  </body>
+          <a href="https://www.linkedin.com/in/melania-mares-321034262/" target="blank">
+            <img src="./public/linkedin.png" alt="my-linkedin" class="item linkedin" />
+          </a>
+        </div>
+      </article>
+    </section>
+
+    <section>
+      <article>
+        <h2>Tecnologías</h2>
+        <div class="flex-container-tech">
+          <a href="https://developer.mozilla.org/es/docs/Web/HTML" target="blank">
+            <img src="./public/html.png" alt="" class="item html b-8" />
+          </a>
+          <a href="https://developer.mozilla.org/es/docs/Web/CSS" target="blank">
+            <img src="./public/css.png" alt="" class="item css b-8" />
+          </a>
+          <a href="https://sass-lang.com/" target="blank">
+            <img src="./public/sass.png" alt="" class="item b-12" />
+          </a>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="blank">
+            <img src="./public/javascript.png" alt="" class="item js" />
+          </a>
+          <a href="https://es.reactjs.org/" target="blank">
+            <img src="./public/react.png" alt="" class="item react" />
+          </a>
+          <a href="https://nextjs.org/" target="blank">
+            <img src="./public/next.png" alt="" class="item next b-12" />
+          </a>
+          <a href="https://git-scm.com/" target="blank">
+            <img src="./public/git.png" alt="" class="item git b-12" />
+          </a>
+          <a href="https://tailwindcss.com/" target="blank">
+            <div class="item circle">
+              <img src="./public/tailwind.webp" alt="" class="tailwind" />
+            </div>
+          </a>
+          <a href="https://getbootstrap.com/" target="blank">
+            <div class="item circle">
+              <img src="./public/bootstrap.png" alt="" class="bootstrap" />
+            </div>
+          </a>
+        </div>
+      </article>
+    </section>
+
+    <section>
+      <article>
+        <h2>Proyectos</h2>
+        <div class="proyect-title-container">
+          <a href="https://free-pics.vercel.app/" target="blank">
+            <h3>FreePics</h3>
+          </a>
+        </div>
+        <p>Buscador de imágenes</p>
+        <a href="https://free-pics.vercel.app/" target="blank">
+          <img class="proyect-card" src="./public/free-pics-preview.gif" alt="free-pics gif">
+        </a>
+      </article>
+    </section>
+
+    <section>
+      <article>
+        <h2>Contáctame!</h2>
+        <a href="mailto:melanibrunet20@gmail.com">melanibrunet20@gmail.com</a>
+      </article>
+    </section>
+  </main>
+</body>
+
 </html>

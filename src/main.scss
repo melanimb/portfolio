@@ -1,0 +1,204 @@
+@import 'utils';
+@import 'config';
+@import 'item';
+
+* {
+	@include reset-pm();
+	box-sizing: border-box;
+}
+
+body {
+	@include hw-100();
+  background: linear-gradient(
+    0deg,
+    rgb(245, 220, 255) 0%,
+    rgb(201, 244, 255) 51%,
+    rgb(253, 255, 237) 100%
+  );
+  font-family: "Comfortaa", cursive;
+}
+
+h1 {
+	font-size: 2.5rem;  
+	font-family: 'Days One', sans-serif;
+}
+  
+h2 {
+	font-size: 1.7rem;
+	color: $font-color;
+}
+
+h3 {
+	font-size: 1.6rem;
+	margin-bottom: 1.2rem;
+}
+
+p {
+  color: $font-color;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: $font-color;
+
+	&:hover {
+		color: $secondary-color;
+	}
+}
+
+section {
+	margin: 0.5rem;
+  box-shadow: 0px 0px 10px 2px rgba(68, 51, 8, 0.136);
+  border-radius: 1rem;
+  background-color: rgba(255, 255, 255, 0.429);
+  width: 70%;
+  height: 100%;
+
+	article {
+		@include t-center();
+	}
+}
+
+article {
+  margin: 2.3rem;
+
+	h1, h2 {
+		margin: 2.5rem 0;
+	}
+}
+
+.container {
+	@include hw-100();
+  margin: 0.5rem auto;
+}
+
+.flex-container {
+	@include hw-100();
+	@include flex();
+  flex-direction: column;
+}
+
+.text-container {
+	max-width: 50rem;
+	@include m-auto();
+	margin-bottom: 2rem;
+	text-align: justify
+}
+
+.about-me {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.271);
+  max-width: 33rem;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.flex-container-aboutme {
+	@include flex();
+  gap: 1rem;
+}
+
+.flex-container-tech {
+  max-width: 31.25rem;
+	@include flex();
+  gap: 0.95rem;
+  flex-wrap: wrap;
+	@include m-auto();
+}
+
+.item {
+	@include item();
+}
+
+.profile {
+  width: 13rem;
+	@include b-rounded();
+}
+
+.linkedin {
+  border: none;
+}
+
+.js {
+	@include border(2.4px);
+}
+
+.react {
+	@include border(1.5px);
+}
+
+.circle {
+  width: 6.25rem;
+  height: 6.25rem;
+	@include flex();
+}
+
+.tailwind {
+  width: 4.375rem;
+  height: 3.125rem;
+}
+
+.bootstrap {
+  width: 5rem;
+  height: 4.375rem;
+}
+
+.proyect-card {
+  border-radius: 10px;
+  max-width: 30rem;
+}
+
+.proyect-title-container {
+  width: fit-content;
+	@include m-auto();
+}
+
+.b-8 {
+	@include border(8px);
+}
+
+.b-12 {
+	@include border(12px);
+}
+
+@media only screen and (max-width: 768px){
+  .text-container {
+    text-align: left;
+  }
+
+  p {
+    font-size: 1.1rem
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+  }
+
+  section {
+    width: 90%;
+  }
+
+  article h1, h2 {
+    margin: 1rem 0;
+  }
+
+  .about-me {
+    padding: 0 0 1rem 0;
+  }
+
+  .proyect-card {
+    max-width: 100%;
+  }
+}
