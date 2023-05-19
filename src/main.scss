@@ -5,61 +5,56 @@
 * {
 	@include reset-pm();
 	box-sizing: border-box;
+  color: $terciary-color;
 }
 
 body {
 	@include hw-100();
-  background: linear-gradient(
-    0deg,
-    rgb(245, 220, 255) 0%,
-    rgb(201, 244, 255) 51%,
-    rgb(253, 255, 237) 100%
-  );
+  background-color: $primary-color;
   font-family: "Comfortaa", cursive;
 }
 
 h1 {
-	font-size: 2.5rem;
+	font-size: 3rem;
   letter-spacing: 0.1rem;
-  font-weight: 800;
+  font-weight: 700;
   font-family: 'Poppins', sans-serif;
 }
   
 h2 {
-	font-size: 1.7rem;
+	font-size: 2.2rem;
   font-weight: 600;
   font-family: 'Poppins', sans-serif;
-	color: $font-color;
 }
 
 h3 {
-	font-size: 1.6rem;
+	font-size: 1.8rem;
   font-weight: 400;
   font-family: 'Poppins', sans-serif;
 	margin-bottom: 1.2rem;
 }
 
 p {
-  color: $font-color;
   font-size: 1.2rem;
   line-height: 1.8rem;
   margin-bottom: 1rem;
+  color: $font-color;
 }
 
 a {
-  text-decoration: none;
+  font-size: 1.2rem;
   color: $font-color;
+  text-decoration: none;
 
 	&:hover {
-		color: $secondary-color;
+		color: $terciary-color;
 	}
 }
 
 section {
 	margin: 0.5rem;
-  box-shadow: 0px 0px 10px 2px rgba(68, 51, 8, 0.136);
-  border-radius: 1rem;
-  background-color: rgba(255, 255, 255, 0.429);
+  border-radius: 3rem;
+  background-color: rgba(255, 255, 255, 0.144);
   width: 70%;
   height: 100%;
 
@@ -95,7 +90,7 @@ article {
 }
 
 .about-me {
-  border-bottom: 2px solid rgba(0, 0, 0, 0.271);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.271);
   max-width: 33rem;
   margin: 2rem auto;
   padding: 1rem;
