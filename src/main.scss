@@ -25,6 +25,7 @@ h2 {
 	font-size: 2.2rem;
   font-weight: 600;
   font-family: 'Poppins', sans-serif;
+  margin: 3rem;
 }
 
 h3 {
@@ -58,7 +59,7 @@ section {
   width: 70%;
   height: 100%;
 
-	article {
+	article, h2 {
 		@include t-center();
 	}
 }
@@ -146,14 +147,34 @@ article {
   height: 4.375rem;
 }
 
-.proyect-card {
-  border-radius: 10px;
-  max-width: 30rem;
-}
+.projects-container {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 
-.proyect-title-container {
-  width: fit-content;
-	@include m-auto();
+    .project-item {
+      flex: 0 500px;
+    }
+
+    .proyect-title-container {
+      width: fit-content;
+      @include m-auto();
+    }
+
+    .proyect-card {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 2rem;
+    
+      opacity: 1;
+      -webkit-transition: .3s ease-in-out;
+      transition: .3s ease-in-out;
+    
+      &:hover {
+        opacity: .5;
+      }
+    }
 }
 
 .b-8 {
