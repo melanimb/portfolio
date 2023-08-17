@@ -87,7 +87,7 @@ article {
 	max-width: 50rem;
 	@include m-auto();
 	margin-bottom: 2rem;
-	text-align: justify
+	text-align: left
 }
 
 .about-me {
@@ -186,10 +186,6 @@ article {
 }
 
 @media only screen and (max-width: 768px){
-  .text-container {
-    text-align: left;
-  }
-
   p {
     font-size: 1.1rem
   }

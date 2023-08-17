@@ -86,7 +86,7 @@ article h1, article h2 {
   max-width: 50rem;
   margin: 0 auto;
   margin-bottom: 2rem;
-  text-align: justify;
+  text-align: left;
 }
 
 .about-me {
@@ -194,9 +194,6 @@ article h1, article h2 {
 }
 
 @media only screen and (max-width: 768px) {
-  .text-container {
-    text-align: left;
-  }
   p {
     font-size: 1.1rem;
   }
